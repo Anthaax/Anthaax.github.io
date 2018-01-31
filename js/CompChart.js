@@ -6,34 +6,31 @@ var myChart = new Chart(ctx, {
         datasets: [{
             data: [12, 12, 12],
             backgroundColor: [
-                'rgba(255, 99, 140, 0.2)',
-                'rgba(54, 162, 140, 0.2)',
-                'rgba(255, 206, 140, 0.2)',
+                'rgba(44, 62, 80, 0.2)',
+                'rgba(17, 131, 109, 0.2)',
+                'rgba(31, 118, 176, 0.2)',
             ],
             borderColor: [
-                'rgba(255,99,140,1)',
-                'rgba(54, 162, 140, 1)',
-                'rgba(255, 206, 140, 1)',
+                'rgba(44, 62, 80, 1)',
+                'rgba(17, 131, 109, 1)',
+                'rgba(31, 118, 176, 1)',
             ],
             borderWidth: 1
         }]
     },
     options:{
-        onClick: graphClickEvent
-    }
+        onClick: graphClickEvent,
+        tooltips: {
+            enabled: false
+       }
+    },
 });
 
 function graphClickEvent(event, array){
     if(array[0]){
         window.location.href = array[0]._model.label+".html";
-    }
-    
-    if(array[0] && array[0]._model.backgroundColor == 'rgba(255, 99, 140, 0.2)'){
-    }
-    else if(array[0] && array[0]._view.backgroundColor == 'rgba(54, 162, 140, 0.2)'){
-        window.location.href = "Compétences.html";
-    }
-    else if(array[0] && array[0]._view.backgroundColor == 'rgba(255, 206, 140, 0.2)'){
-        window.location.href = "Compétences.html";
+        if (array[0]._model.label == "C#") {
+            window.location.href ="net.html";
+        }
     }
 }
