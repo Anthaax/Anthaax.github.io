@@ -4,39 +4,61 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/portfolio.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
             <div class="container">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <a class="navbar-brand col-sm-2" href="#">Guillaume Fimes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="Biographie.html">Biographie</a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="#">Réalisations<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active col-sm-3">
+                            <a class="nav-link" href="Compétences.html">Compétences<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Accueil.html">Home</a></li>
-                    <li><a href="Biographie.html">Biographie</a></li>
-                    <li><a href="Réalisation.html">Réalisation</a></li>
-                    <li class="active"><a href="">Compétences</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-                </div><!--/.nav-collapse -->
             </div>
         </nav>
         <div class="container">
-            <div class="home-template row">
-                <h1>Estimation des tâches</h1>
-                <div class="head">
-                    
-                </div>
-            </div>
+            <h2>Éstimation des tâches</h2></br>
+            <p>Aujourd’hui dans les méthodologies de travail type AGILE, l’estimation est une compétence primordiale chez un développeur. Une bonne estimation d’une tache permet une meilleure planification d’un sprint.</p>
+            
+            <p>Depuis le début de ma formation j’accorde beaucoup d’importance à cet exercice d’avoir une estimation la plus réaliste possible. De mon point de vue cela apporte énormément de connaissance sur soi-même et me permet une meilleure organisation de mon temps de travail.</p>
+            
+            <p>Au sein de l’équipe de Notocord j’ai pu travailler sur cet axe. Toutes les tâches qui sont attribuées à un développeur doivent être estimées par lui-même. J’ai donc pu affiner mes estimations pour ainsi faciliter l’organisation des prochains pour le chef de projet.</p>
+            
+            <p>A mes débuts au sein de l’équipe mes estimations n’étaient pas forcément très justes. Mais en travaillant sur la vision globale d’une tache cela m’a permis de pour rendre ces estimations plus précises.</p>
+            
+            <p>À la fin de chaque sprint il y a une comparaison entre le temps estimé et le temps de réalisation. Au début la marger d’erreur de l’éstimation était aux alentours de 40%. Après 1 an la marge était de 10%.</p>
+            
+            <p>Pour moi ce qui différencie un bon développeur sait estimer le plus juste possible une tache.</p></br>
+
+            <h4>Réalisations Associées</h4></br>
+            <span class="badge badge-huge badge-light mb-4"><a href="#">Sense</a></span>
+            <span class="badge badge-huge badge-light mb-4"><a href="archivite.html">Archi'Vite</a></span>
+
+            <h4>Autres Compétences Humaines</h4></br>
+            <span class="badge badge-huge badge-light"><a href="#">Sense</a></span></br>
         </div>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/Chart.PieceLabel.js"></script>
+        <script src="js/CompChart.js"></script>
     </body>
 </html>

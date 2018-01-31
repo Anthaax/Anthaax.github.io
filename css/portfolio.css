@@ -8,3 +8,19 @@ body {
     margin-left: -1rem;
     margin-right: -1rem; 
 }
+.badge-huge{
+    font-size: 110%;
+}
+.center{
+    text-align: center
+}
+.profile-image{
+    height: auto;
+    width: 100%;
+}
+.to-rigth{
+    text-align: right;
+}
+.jumbotron{
+    padding-top: 2rem;
+}
