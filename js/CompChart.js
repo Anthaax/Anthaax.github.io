@@ -2,19 +2,18 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["C#", "Js", "SQL"],
+        labels: ["C#", "JavaScript", "SQL"],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3],
+            data: [12, 12, 12],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(255, 99, 140, 0.2)',
+                'rgba(54, 162, 140, 0.2)',
+                'rgba(255, 206, 140, 0.2)',
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
+                'rgba(255,99,140,1)',
+                'rgba(54, 162, 140, 1)',
+                'rgba(255, 206, 140, 1)',
             ],
             borderWidth: 1
         }]
@@ -25,13 +24,16 @@ var myChart = new Chart(ctx, {
 });
 
 function graphClickEvent(event, array){
-    if(array[0] && array[0]._view.backgroundColor == 'rgba(255, 99, 132, 0.2)'){
+    if(array[0]){
+        window.location.href = array[0]._model.label+".html";
+    }
+    
+    if(array[0] && array[0]._model.backgroundColor == 'rgba(255, 99, 140, 0.2)'){
+    }
+    else if(array[0] && array[0]._view.backgroundColor == 'rgba(54, 162, 140, 0.2)'){
         window.location.href = "Compétences.html";
     }
-    else if(array[0] && array[0]._view.backgroundColor == 'rgba(54, 162, 235, 0.2)'){
-        window.location.href = "Compétences.html";
-    }
-    else if(array[0] && array[0]._view.backgroundColor == 'rgba(255, 206, 86, 0.2)'){
+    else if(array[0] && array[0]._view.backgroundColor == 'rgba(255, 206, 140, 0.2)'){
         window.location.href = "Compétences.html";
     }
 }
