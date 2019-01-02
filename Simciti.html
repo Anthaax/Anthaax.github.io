@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/portfolio.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand col-sm-2" href="#">Guillaume Fimes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item  col-sm-3">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="Biographie.html">Biographie</a>
+                        </li>
+                        <li class="nav-item active col-sm-3">
+                            <a class="nav-link" href="Réalisation.html">Réalisations <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="Compétences.html">Compétences</a>
+                        </li>
+                        <li class="nav-item col-sm-3">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h2>Simc'ITI</h2></br>
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <img class="profile-image" src="img/SimcITI.png">
+                </div>
+                <div class="col-lg-8">
+                    <h5>Jeu de gestion de ville</h5>
+                    <p>
+                        Simc'ITI est un jeu de gestion de ville le principe est de construire une ville engerant plusieurs paramètres comme la gestion des impôts, des incendies, de la délinquance, taux de bonheur des habitants de la ville, les commerces et d'autres. Nous avons basé ce projet sur le jeu "Simcity" qui était sorti sur NES et plus récemment l'excellent "Cities: Skylines".
+                    </p>
+
+                    <p>Nous Etions deux pour le développement du projet. Ce projet avait pour but d'apprendre le C# et utiliser Windows Forms.</p>
+                        
+                    <p> 
+                        D'ailleurs ce projet nous a appris une chose primordiale lors du développement objet : l'architecture. Logicielle.
+                        Lors du début du projet je me suis heurté à la création de bâtiments, j'avais pris une position plutôt discutable et pas vraiment modulable facilement.
+                        Pour recevoir de l'aide j'ai demandé à mon professeur référent de l'aide et il m'a proposé d'implementer le design pattern de la factory pour ainsi faciliter la création de different types du bâtiment ( habitation, commerces, casernes et d'autres).                            Ce fut le premier design pattern que j'ai mis en oeuvre dans un projet. Et il fut d'une grande aide bien qu'il ait fallu l'adapter pour ce projet. Une fois la factory rajouter un batiment etait tres rapide si toutes ses carateristiques etait deja implementé comme le fait de bruler par exemple.
+                    </p>
+                    <p>
+                        Ce projet fut une véritable mine d'or pour mettre en place plein de design pattern. Par exemple chaque bâtiment à avait une façon de se comporter en fonction des autres bâtiments crée à côté ce qui nous a appris à utiliser le pattern de l'Observeur.
+                    </p>
+                    <p>
+                        Ce projet fut l'un de mes préférées très complet pour apprendre des principes utiles dans le développement.
+                    </p>
+                    
+                </div>
+            </div>
+            <h4>Competences Associées</h4></br>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="CSharp.html">C#</a></span>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="Archi.html">Architecture Logicielle</a></span>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="Autres.html">Windows Forms</a></span>
+            <h4>Autres Réalisations </h4></br>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="Archivite.html">Archi'vite</a></span>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="Sense.html">SENSE</a></span>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="Informing.html">In'forming</a></span>
+            <span class="badge badge-huge badge-light mb-4 mr-2"><a href="Synouk.html">Synouk Must Die</a></span>
+            </br>
+        </div>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/Chart.PieceLabel.js"></script>
+        <script src="js/CompChart.js"></script>
+    </body>
+</html>

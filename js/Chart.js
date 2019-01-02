@@ -2284,7 +2284,7 @@ defaults._set('bubble', {
 	tooltips: {
 		callbacks: {
 			title: function() {
-				// Title doesn't make sense for scatter since we format the data as a point
+				// Title doesn't make SENSE for scatter since we format the data as a point
 				return '';
 			},
 			label: function(item, data) {
@@ -3496,7 +3496,7 @@ defaults._set('scatter', {
 	tooltips: {
 		callbacks: {
 			title: function() {
-				return '';     // doesn't make sense for scatter since data are formatted as a point
+				return '';     // doesn't make SENSE for scatter since data are formatted as a point
 			},
 			label: function(item) {
 				return '(' + item.xLabel + ', ' + item.yLabel + ')';
