@@ -2,7 +2,7 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["C#", "JavaScript", "AngularJS", "SQL", "Autres"],
+        labels: ["C#", "Javascript", "AngularJS", "SQL", "Autres"],
         datasets: [{
             data: [25, 7, 7,2, 1],
             backgroundColor: [
@@ -36,7 +36,7 @@ function graphClickEvent(event, array){
         var href = array[0]._model.label+".html"
         window.location.href = href;
         if (array[0]._model.label == "C#") {
-            window.location.href ="Csharp.html";
+            window.location.href ="CSharp.html";
         }
     }
 }
