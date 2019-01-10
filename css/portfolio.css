@@ -24,3 +24,6 @@ body {
 .jumbotron{
     padding-top: 2rem;
 }
+.chrono-width{
+    max-width: 80%;
+}
