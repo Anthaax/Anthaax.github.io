@@ -18,6 +18,10 @@ body {
     height: auto;
     width: 100%;
 }
+.horizontalCenter{
+    margin-top: auto;
+	margin-bottom: auto;
+}
 .to-rigth{
     text-align: right;
 }

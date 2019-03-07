@@ -27,6 +27,9 @@ var myChart = new Chart(ctx, {
         onClick: graphClickEvent,
         tooltips: {
             enabled: false
+       },
+       legend: {
+        onClick: undefined
        }
     },
 });
